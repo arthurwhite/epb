@@ -1,6 +1,6 @@
 {
     "name": "epb",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Energy performance of buildings",
     "main": "./lib/index.js",
     "directories": {
