@@ -2,15 +2,12 @@
     "name": "epb",
     "version": "1.0.5",
     "description": "Energy performance of buildings",
-    "main": "./dist/index.js",
+    "main": "dist/index.js",
     "files": [
-        "./dist/"
+        "dist/"
     ],
-    "directories": {
-        "dist": "./dist"
-    },
     "scripts": {
-        "prepare": "rm -rf ./dist && tsc"
+        "prepare": "rm -rf dist && tsc"
     },
     "repository": {
         "type": "git",
@@ -34,7 +31,7 @@
         "url": "https://github.com/arthurwhite/epb/issues"
     },
     "homepage": "https://github.com/arthurwhite/epb#readme",
-    "types": "./dist/index.d.ts",
+    "types": "dist/index.d.ts",
     "devDependencies": {
         "tslint": "^5.11.0",
         "tslint-config-prettier": "^1.16.0",
