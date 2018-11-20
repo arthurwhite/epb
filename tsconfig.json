@@ -6,7 +6,7 @@
         "lib": ["esnext"],
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "outDir": "./dist",
+        "outDir": "./lib",
         "strict": true
     },
     "include": ["src"]
