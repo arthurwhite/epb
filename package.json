@@ -22,11 +22,10 @@
         "energy",
         "epb",
         "epc",
-        "estate",
         "france",
         "peb",
         "performance",
-        "real"
+        "real estate"
     ],
     "author": "Arthur White <arthur@white.li>",
     "license": "MIT",
