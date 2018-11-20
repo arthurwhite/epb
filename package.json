@@ -1,0 +1,44 @@
+{
+    "name": "epb",
+    "version": "1.0.0",
+    "description": "Energy performance of buildings",
+    "main": "dist/index.js",
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "prepare": "rm -rf dist && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arthurwhite/epb.git"
+    },
+    "keywords": [
+        "belgium",
+        "buildings",
+        "energy",
+        "epb",
+        "epc",
+        "estate",
+        "peb",
+        "performance",
+        "real"
+    ],
+    "author": "Arthur White <arthur@white.li>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/arthurwhite/epb/issues"
+    },
+    "homepage": "https://github.com/arthurwhite/epb#readme",
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.16.0",
+        "typescript": "^3.1.6"
+    },
+    "prettier": {
+        "arrowParens": "always",
+        "tabWidth": 4,
+        "trailingComma": "all"
+    }
+}
