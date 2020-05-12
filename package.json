@@ -16,7 +16,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/arthurwhite/epb.git"
+        "url": "git+https://github.com/arthurwhite/epb-js.git"
     },
     "keywords": [
         "belgium",
@@ -33,9 +33,9 @@
     "author": "Arthur White <arthur@white.li>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/arthurwhite/epb/issues"
+        "url": "https://github.com/arthurwhite/epb-js/issues"
     },
-    "homepage": "https://github.com/arthurwhite/epb#readme",
+    "homepage": "https://github.com/arthurwhite/epb-js#readme",
     "types": "./lib/index.d.ts",
     "devDependencies": {
         "@typescript-eslint/eslint-plugin": "2.31.0",
