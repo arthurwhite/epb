@@ -2,10 +2,7 @@
     "compileOnSave": true,
     "compilerOptions": {
         "declaration": true,
-        "esModuleInterop": true,
-        "lib": ["esnext"],
-        "noUnusedLocals": true,
-        "noUnusedParameters": true,
+        "lib": ["ESNext"],
         "outDir": "./lib",
         "strict": true
     },

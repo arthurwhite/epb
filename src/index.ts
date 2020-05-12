@@ -12,9 +12,11 @@ export enum Regulator {
  * @param regulator The regulator that defines class calculation rules.
  * @param consumption The consumption of the building in kWh/m².year.
  */
-export async function energyClass(regulator: Regulator, consumption: number) {
+export const energyClass = async (
+    regulator: Regulator,
+    consumption: number
+): Promise<string | null> => {
     switch (regulator) {
-        // tslint:disable:curly
         case Regulator.Brussels:
             if (consumption <= 0) return "A++";
             else if (consumption <= 15) return "A+";
@@ -33,7 +35,7 @@ export async function energyClass(regulator: Regulator, consumption: number) {
             else if (consumption <= 253) return "E";
             else if (consumption <= 275) return "E-";
             else if (consumption <= 345) return "F";
-            else return "G";
+            return "G";
 
         case Regulator.France:
             if (consumption <= 50) return "A";
@@ -42,7 +44,7 @@ export async function energyClass(regulator: Regulator, consumption: number) {
             else if (consumption <= 230) return "D";
             else if (consumption <= 330) return "E";
             else if (consumption <= 450) return "F";
-            else return "G";
+            return "G";
 
         case Regulator.Wallonia:
             if (consumption <= 0) return "A++";
@@ -53,10 +55,9 @@ export async function energyClass(regulator: Regulator, consumption: number) {
             else if (consumption <= 340) return "D";
             else if (consumption <= 425) return "E";
             else if (consumption <= 510) return "F";
-            else return "G";
+            return "G";
 
         default:
             return null;
-        // tslint:enable:curly
     }
-}
+};
