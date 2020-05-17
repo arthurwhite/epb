@@ -63,7 +63,7 @@ export const energyClass = async (
 };
 
 /**
- * Get the total consumption of a building given its energy consumption and its total area.
+ * Get the total consumption of a building in a year, given its energy consumption and its total area.
  *
  * @param consumption The consumption of the building in kWh/m².year.
  * @param area The total area of the building in m².
