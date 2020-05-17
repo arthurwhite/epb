@@ -25,7 +25,7 @@ const ecls = await energyClass(Regulator.Brussels, consumption);
 
 Currently supported:
 
--   `brussels`
--   `flanders` (_exception: energy classes are not used in Flanders_)
--   `france`
--   `wallonia`
+- `brussels`
+- `flanders` (_exception: energy classes are not used in Flanders_)
+- `france`
+- `wallonia`

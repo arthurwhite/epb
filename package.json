@@ -1,81 +1,78 @@
 {
-    "name": "epb",
-    "version": "1.1.2",
-    "description": "Energy performance of buildings",
-    "main": "./lib/index.js",
-    "files": [
-        "lib/"
+  "name": "epb",
+  "version": "1.1.2",
+  "description": "Energy performance of buildings",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/"
+  ],
+  "directories": {
+    "lib": "./lib"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,json,ts}\"",
+    "lint": "eslint --fix \"**/*.{js,ts}\"; exit 0",
+    "prepare": "rm -rf ./lib && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immoveable/epb-js.git"
+  },
+  "keywords": [
+    "belgium",
+    "buildings",
+    "dpe",
+    "energy",
+    "epb",
+    "epc",
+    "france",
+    "peb",
+    "performance",
+    "real estate"
+  ],
+  "author": "Arthur White <arthur@white.li>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/immoveable/epb-js/issues"
+  },
+  "homepage": "https://github.com/immoveable/epb-js#readme",
+  "types": "./lib/index.d.ts",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.31.0",
+    "@typescript-eslint/parser": "2.31.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:all",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "prettier/@typescript-eslint"
     ],
-    "directories": {
-        "lib": "./lib"
-    },
-    "scripts": {
-        "format": "prettier --write \"**/*.{js,json,ts}\"",
-        "lint": "eslint --fix \"**/*.{js,ts}\"; exit 0",
-        "prepare": "rm -rf ./lib && tsc"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/immoveable/epb-js.git"
-    },
-    "keywords": [
-        "belgium",
-        "buildings",
-        "dpe",
-        "energy",
-        "epb",
-        "epc",
-        "france",
-        "peb",
-        "performance",
-        "real estate"
-    ],
-    "author": "Arthur White <arthur@white.li>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/immoveable/epb-js/issues"
-    },
-    "homepage": "https://github.com/immoveable/epb-js#readme",
-    "types": "./lib/index.d.ts",
-    "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "2.31.0",
-        "@typescript-eslint/parser": "2.31.0",
-        "eslint": "^7.0.0",
-        "eslint-config-prettier": "^6.11.0",
-        "prettier": "^2.0.5",
-        "typescript": "^3.8.3"
-    },
-    "prettier": {
-        "tabWidth": 4
-    },
-    "eslintConfig": {
-        "root": true,
-        "parser": "@typescript-eslint/parser",
-        "env": {
-            "browser": true,
-            "node": true
-        },
-        "extends": [
-            "eslint:all",
-            "plugin:@typescript-eslint/eslint-recommended",
-            "plugin:@typescript-eslint/recommended",
-            "prettier",
-            "prettier/@typescript-eslint"
-        ],
-        "rules": {
-            "capitalized-comments": "off",
-            "complexity": "off",
-            "max-classes-per-file": "off",
-            "max-lines-per-function": "off",
-            "max-lines": "off",
-            "max-params": "off",
-            "max-statements": "off",
-            "multiline-comment-style": "off",
-            "new-cap": "off",
-            "no-magic-numbers": "off",
-            "one-var": "off",
-            "require-await": "off",
-            "sort-keys": "off"
-        }
+    "rules": {
+      "capitalized-comments": "off",
+      "complexity": "off",
+      "max-classes-per-file": "off",
+      "max-lines-per-function": "off",
+      "max-lines": "off",
+      "max-params": "off",
+      "max-statements": "off",
+      "multiline-comment-style": "off",
+      "new-cap": "off",
+      "no-magic-numbers": "off",
+      "one-var": "off",
+      "require-await": "off",
+      "sort-keys": "off"
     }
+  }
 }
