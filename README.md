@@ -29,3 +29,14 @@ Currently supported:
 - `flanders` (_exception: energy classes are not used in Flanders_)
 - `france`
 - `wallonia`
+
+### `totalConsumption`
+
+Get the total consumption of a building in a year, given its energy consumption and its total area.
+
+```ts
+const consumption = 100;
+const area = 250;
+const total = totalConsumption(consumption, area);
+// total === 25000
+```
