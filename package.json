@@ -10,9 +10,9 @@
     "lib": "./lib"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.{js,json,ts}\"",
-    "lint": "eslint --fix \"**/*.{js,ts}\"; exit 0",
-    "prepare": "rm -rf ./lib && tsc",
+    "format": "prettier --write .",
+    "lint": "eslint --fix .; exit 0",
+    "prepare": "npm run test && rm -rf ./lib && rollup src/index.js --format umd --name \"epb\" --file lib/index.js",
     "test": "jest"
   },
   "repository": {
@@ -37,52 +37,13 @@
     "url": "https://github.com/immoveable/epb-js/issues"
   },
   "homepage": "https://github.com/immoveable/epb-js#readme",
-  "types": "./lib/index.d.ts",
   "devDependencies": {
-    "@types/jest": "^25.2.2",
-    "@typescript-eslint/eslint-plugin": "2.31.0",
-    "@typescript-eslint/parser": "2.31.0",
-    "eslint": "^7.0.0",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "jest": "^26.0.1",
     "prettier": "^2.0.5",
-    "ts-jest": "^26.0.0",
-    "typescript": "^3.8.3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "env": {
-      "browser": true,
-      "node": true
-    },
-    "extends": [
-      "eslint:all",
-      "plugin:@typescript-eslint/eslint-recommended",
-      "plugin:@typescript-eslint/recommended",
-      "prettier",
-      "prettier/@typescript-eslint"
-    ],
-    "rules": {
-      "capitalized-comments": "off",
-      "complexity": "off",
-      "max-classes-per-file": "off",
-      "max-lines-per-function": "off",
-      "max-lines": "off",
-      "max-params": "off",
-      "max-statements": "off",
-      "multiline-comment-style": "off",
-      "new-cap": "off",
-      "no-magic-numbers": "off",
-      "one-var": "off",
-      "require-await": "off",
-      "sort-keys": "off"
-    }
-  },
-  "jest": {
-    "preset": "ts-jest",
-    "testMatch": [
-      "**/tests/**/*.[jt]s?(x)"
-    ]
+    "rollup": "^2.11.2"
   }
 }
